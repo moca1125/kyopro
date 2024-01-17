@@ -8,9 +8,7 @@ int main(void){
     int q,r;
     int i,ans;
     scanf("%d %d %d",&n,&h,&x);
-    for(i=0;i<n;i++){
-        scanf("%d",&p[i]);
-    }
+    for(i=0;i<n;i++) scanf("%d",&p[i]);
     q=999+h; //max
     r=0;    //initialization
     for(i=0;i<n;i++){
