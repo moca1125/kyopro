@@ -1,3 +1,4 @@
+//2024/01/17
 //abc317-a
 #include<stdio.h>
 
@@ -12,6 +13,9 @@ int main(void){
     }
     q=999+h;
     r=0;  //initialization
+    for(i=0;i<n;i++) scanf("%d",&p[i]);
+    q=999+h; //max
+    r=0;    //initialization
     for(i=0;i<n;i++){
         ans=0;
         ans=h+p[i];
