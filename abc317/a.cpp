@@ -11,7 +11,7 @@ int main(void){
         scanf("%d",&p[i]);
     }
     q=999+h;
-    r=0;
+    r=0;  //initialization
     for(i=0;i<n;i++){
         ans=0;
         ans=h+p[i];
