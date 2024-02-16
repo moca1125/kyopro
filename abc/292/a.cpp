@@ -22,7 +22,8 @@ int main()
 // Cにcを大文字変換したものを代入
 // char C=toupper(c);
 
-/*
+/*小文字を大文字に
+std::toupper
 #include <bits/stdc++.h>
 using namespace std;
 
