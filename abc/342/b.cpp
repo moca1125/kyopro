@@ -1,4 +1,5 @@
 // 2024/02/24
+// 自力AC
 #include <bits/stdc++.h>
 using namespace std;
 
