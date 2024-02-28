@@ -5,4 +5,4 @@
 ・ABC ：AtCoder Beginner Contest</br>
 ・ARC ：Atcoder Regular Contest </br>
 ・APG4b ：AtCoder Programming Guide for </br>
-・tessoku ：『競技プログラミングの鉄則』著:米田優峻　の中の練習問題　</br>
+・tessoku ：『競技プログラミングの鉄則』著:米田優峻 の中の練習問題　</br>
