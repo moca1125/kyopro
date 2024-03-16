@@ -28,3 +28,17 @@ int main()
 
     cout << alice - bob << endl;
 }
+
+/*鹿本
+・ranged-based for文
+vectorの各要素に対して処理をする．
+auto& aiはa内の各要素への参照を表す編すで，vectorｓの先頭から順に各要素が代入される
+
+vector<int> a(n);
+for(auto&ai : a){
+    cin>>ai;
+}
+
+・降順ソート
+sort(a.begin(),a.end(),greater<int>());
+*/
