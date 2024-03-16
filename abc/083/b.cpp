@@ -15,8 +15,8 @@ int main()
         num = 0;
         while (comp > 0)
         {
-            num += comp % 10;
-            comp /= 10;
+            num += comp % 10; // 1の位が分かる
+            comp /= 10;       // 見る位を変える
         }
         if (a <= num && num <= b)
         {
