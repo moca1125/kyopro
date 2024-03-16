@@ -1,28 +1,20 @@
-// 2024/03/16
-// WA
+// 2024/03/17
+// 自力AC
 #include <bits/stdc++.h>
-#include <cmath>
 using namespace std;
-
 int main()
 {
     long long int x;
     long long int ans;
     cin >> x;
-    if ((5 <= x % 10 && x % 10 <= 9) || (-9 <= x % 10 && x % 10 <= -5))
+
+    if (x % 10 != 0 && 0 < x)
     {
-        if (0 < x)
-        {
-            ans = x / 10 + 1;
-        }
-        else
-        {
-            ans = x / 10 - 1;
-        }
+
+        ans = (x / 10) + 1;
     }
     else
     {
-
         ans = x / 10;
     }
 
