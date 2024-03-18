@@ -13,7 +13,7 @@ int main()
         cin >> s.at(i);
     }
     reverse(s.begin(), s.end());
-    for (auto ans : s)
+    for (auto ans : s) // はじめてautoを使った！
     {
         cout << ans << endl;
     }
