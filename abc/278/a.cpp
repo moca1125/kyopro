@@ -9,9 +9,9 @@ int main()
     int n, k;
     cin >> n >> k;
     vector<int> a(n);
-    for (int i = 0; i < n; i++)
+    for (auto &ai : a)
     {
-        cin >> a[i];
+        cin >> ai;
     }
     while (0 < k)
     {
