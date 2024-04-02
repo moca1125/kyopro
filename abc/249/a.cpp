@@ -1,5 +1,5 @@
 // 2024/04/02
-//
+// 解説AC
 #include <bits/stdc++.h>
 using namespace std;
 
