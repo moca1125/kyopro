@@ -1,8 +1,48 @@
+// 2024/04/29
+// 解説AC
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
+    // 移動した距離を管理した配列
+    int dx[] = {-1, 0, 1, 0};
+    int dy[] = {0, 1, 0, -1};
     int h, w, n;
     cin >> h >> w >> n;
+    vector<vector<char>> ans(h, vector<char>(w, '.'));
+    int x = 0, y = 0, m = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (ans[y][x] == '.')
+        {
+            ans[y][x] = '#';
+            m++;
+        }
+        else
+        {
+            ans[y][x] = '.';
+            m += 3;
+        }
+        m %= 4;
+        x += dx[m];
+        y += dy[m];
+        // 端の処理
+        if (x < 0)
+            x += w;
+        if (x >= w)
+            x -= w;
+        if (y < 0)
+            y += h;
+        if (y >= h)
+            y -= h;
+    }
+    for (int j = 0; j < h; j++)
+    {
+        for (int i = 0; i < w; i++)
+        {
+            cout << ans[j][i];
+        }
+        cout << endl;
+    }
 }
