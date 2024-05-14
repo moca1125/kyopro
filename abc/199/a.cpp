@@ -13,6 +13,6 @@ int main()
     }
     else
     {
-        cout << "No" <, endl;
+        cout << "No" << endl;
     }
 }
