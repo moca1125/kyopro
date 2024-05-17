@@ -1,5 +1,5 @@
 // 2024.05/17
-//
+// 自力AC
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,9 +7,9 @@ int main()
 {
     double a;
     cin >> a;
-    int ans = a * 10 % 10;
+    int ans = (int)(a * 10) % 10;
     cout << (int)a;
-    if (1 <= ans && ans <= 2)
+    if (0 <= ans && ans <= 2)
     {
         cout << "-" << endl;
     }
@@ -17,5 +17,8 @@ int main()
     {
         cout << endl;
     }
+    else
+    {
+        cout << "+" << endl;
+    }
 }
-else
