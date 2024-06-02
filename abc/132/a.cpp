@@ -8,7 +8,7 @@ int main()
     string s;
     cin >> s;
 
-    sort(all(s));
+    sort(s.begin(), s.end());
 
     if (s[0] == s[1] and s[1] != s[2] and s[2] == s[3])
     {
