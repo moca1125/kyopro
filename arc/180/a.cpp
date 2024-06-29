@@ -9,6 +9,7 @@ int main()
     string s;
     string ans1;
     cin >> s;
+    set<string> check;
     for (int i = 0; i < s.size() - 2; i++)
     {
         if (s[i] == 'A' && s[i + 1] == 'B' && s[i + 2] == 'A')
