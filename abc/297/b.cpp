@@ -1,41 +1,42 @@
-// 2024/03/12
-// 自力AC
-#include <bits/stdc++.h>
+//2024/07/01
+//
+#include<iostream>
 using namespace std;
 
-int main()
-{
-    string s;
-    cin >> s;
-    vector<int> B(2);
-    vector<int> R(2);
-    int k;
-    int i, B_num = 0, R_num = 0;
-    for (i = 0; i < 8; i++)
-    {
-        if (s.at(i) == 'B')
-        {
-            B.at(B_num) = i;
-            B_num++;
-        }
+int main(){
+	string s;
+	cin>>s;
+	string b;	
+	string r;
+	int k;
+	bool check1=false;
+	bool check2=false;
+	for(int i=0;i<s.size();i++){
+		if(s[i]=='B'){
+			b+=to_string(i+1);	
+		}
+			
+		if(s[i]=='R'){
+			r+=to_string(i);
+		}
+		if(s[i]=='K'){
+			k=i;
+		}
+	}
+	int r0=r[0]-'0';
+	int r1=r[1]-'0';
+	if(r0<k&&k<r1){
+		check2=true;
+	}
+	 int b0 = b[0] - '0';
+        int b1 = b[1] - '0';
+	if(b0%2!=b1%2){
+		check1=true;
+	}
+	if(check1==true&&check2==true){
+		cout<<"Yes"<<endl;
+	}else{
+		cout<<"No"<<endl;
+	}
 
-        if (s.at(i) == 'R')
-        {
-            R.at(R_num) = i;
-            R_num++;
-        }
-        if (s.at(i) == 'K')
-        {
-            k = i;
-        }
-    }
-
-    if (B.at(0) % 2 != B.at(1) % 2 && (R.at(0) < k && k < R.at(1)))
-    {
-        cout << "Yes" << endl;
-    }
-    else
-    {
-        cout << "No" << endl;
-    }
 }
