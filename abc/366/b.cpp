@@ -16,33 +16,19 @@ int main(){
 			len=s[i].size();	
 		}
 	}
+	
+	vector<string> t(len,string(n,'*'));//長nの文字列をlen個生成
 	for(int j=0;j<len;j++){
-		string check="";
 	for(int i=n-1;0<=i;i--){
-		string ans="";
-		if(j<s[i].size()){
-		ans=s[i].substr(j,1); //j番目の範囲外アクセスに注意
-			check+=ans;
-		}else{
-			check+='*';
-		}
-	
+			t[j][i]=s[i][j];	
 	}
-	if(check[check.size()-1]=='*'){
-		for(int k=0;k<check.size()-1;k++){
-			cout<<check[k];
-		}
-	}else{
-		for(int k=0;k<check.size();k++){
-			cout<<check[k];
-		}
 	}
-	
+		for(int k=0;k<len;k++){
+				while(t[k].back()=='*'){
+						t[k].pop_back();
 
-	cout<<endl;
-	}
-	
-
-
+				}
+				cout<<t[k]<<endl;
+		}
 
 }
